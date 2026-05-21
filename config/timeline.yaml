@@ -337,9 +337,17 @@ presets:
         report_mode: "daily"       # 当日全部新闻汇总
         # once 继承 default（analyze: true, push: true）→ 只推/分析一次
 
+      morningpush:
+        name: "晨间推送"
+        start: "09:00"
+        end: "11:00"
+        collect: true
+        analyze: true
+        push: true
+        report_mode: current
     day_plans:
       all_day:
-        periods: ["afternoon_peek", "late_night"]
+        periods: ["afternoon_peek", "late_night", "morningpush"]
     week_map:
       1: "all_day"
       2: "all_day"

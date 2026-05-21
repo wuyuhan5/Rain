@@ -59,8 +59,6 @@ platforms:
       name: "澎湃新闻"
     - id: "weibo"
       name: "微博"
-    - id: "_36kr"
-      name: "36ke"
     - id: "36kr-renqi"
       name: "人气36"
 

@@ -61,6 +61,10 @@ platforms:
       name: "微博"
     - id: "36kr-renqi"
       name: "人气36"
+    - id: "ithome"
+      name: "IT之家"
+    - id: "36kr-quick"
+      name: "36氪快讯"
 
 
 

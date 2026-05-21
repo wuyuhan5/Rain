@@ -57,26 +57,28 @@ platforms:
   sources:
     - id: "toutiao"
       name: "今日头条"
-    - id: "baidu"
+   # - id: "baidu"
       name: "百度热搜"
-    - id: "wallstreetcn-hot"
+   # - id: "wallstreetcn-hot"
       name: "华尔街见闻"
     - id: "thepaper"
       name: "澎湃新闻"
-    - id: "bilibili-hot-search"
+   # - id: "bilibili-hot-search"
       name: "bilibili 热搜"
-    - id: "cls-hot"
+   # - id: "cls-hot"
       name: "财联社热门"
-    - id: "ifeng"
+   # - id: "ifeng"
       name: "凤凰网"
-    - id: "tieba"
+   # - id: "tieba"
       name: "贴吧"
     - id: "weibo"
       name: "微博"
-    - id: "douyin"
+   # - id: "douyin"
       name: "抖音"
-    - id: "zhihu"
+   # - id: "zhihu"
       name: "知乎"
+    - id: "_36kr"
+      name: "36氪"
 
 
 
@@ -89,7 +91,7 @@ platforms:
 # max_age_days: 可选，覆盖全局 freshness_filter.max_age_days
 # ===============================================================
 rss:
-  enabled: true                       # 是否启用 RSS 抓取（true=启用, false=关闭）
+  enabled: false                       # 是否启用 RSS 抓取（true=启用, false=关闭）
 
   # 文章新鲜度过滤（过滤超龄旧文章，避免重复推送）
   # 仅在推送阶段过滤，所有文章仍会存入数据库
@@ -105,17 +107,17 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hacker-news"
+   # - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
 
-    - id: "ruanyifeng"
+   # - id: "ruanyifeng"
       name: "阮一峰的网络日志"
       url: "http://www.ruanyifeng.com/blog/atom.xml"
       enabled: false                  # 禁用
       # max_age_days: 3               # 示例：推送 3 天内的文章（更新较慢的博客）
      
-    - id: "yahoo-finance"
+   # - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
 
